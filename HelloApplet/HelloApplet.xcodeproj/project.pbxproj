@@ -16,6 +16,10 @@
 		36E986DC231F04B200CD301F /* ExchangeRatesWidgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E986DB231F04B200CD301F /* ExchangeRatesWidgetController.swift */; };
 		36E986DF231F04B200CD301F /* ExchangeRatesWidget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E986DD231F04B200CD301F /* ExchangeRatesWidget.storyboard */; };
 		36E986E3231F04B200CD301F /* ExchangeRates.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36E986D6231F04B200CD301F /* ExchangeRates.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36E986EE2325437400CD301F /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E986ED2325437400CD301F /* CurrencyRate.swift */; };
+		36E986EF2325437400CD301F /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E986ED2325437400CD301F /* CurrencyRate.swift */; };
+		36E986F1232545F700CD301F /* CurrencyRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E986F0232545F700CD301F /* CurrencyRatesService.swift */; };
+		36E986F2232545F700CD301F /* CurrencyRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E986F0232545F700CD301F /* CurrencyRatesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,8 @@
 		36E986DB231F04B200CD301F /* ExchangeRatesWidgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesWidgetController.swift; sourceTree = "<group>"; };
 		36E986DE231F04B200CD301F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ExchangeRatesWidget.storyboard; sourceTree = "<group>"; };
 		36E986E0231F04B200CD301F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E986ED2325437400CD301F /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
+		36E986F0232545F700CD301F /* CurrencyRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 				36E986C7231F03D400CD301F /* Assets.xcassets */,
 				36E986C9231F03D400CD301F /* LaunchScreen.storyboard */,
 				36E986CC231F03D400CD301F /* Info.plist */,
+				36E986F3232547A400CD301F /* Model */,
+				36E986F4232547AD00CD301F /* Service */,
 			);
 			path = HelloApplet;
 			sourceTree = "<group>";
@@ -124,6 +132,22 @@
 				36E986E0231F04B200CD301F /* Info.plist */,
 			);
 			path = ExchangeRates;
+			sourceTree = "<group>";
+		};
+		36E986F3232547A400CD301F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36E986ED2325437400CD301F /* CurrencyRate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36E986F4232547AD00CD301F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				36E986F0232545F700CD301F /* CurrencyRatesService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E986F1232545F700CD301F /* CurrencyRatesService.swift in Sources */,
 				36E986C3231F03D200CD301F /* ViewController.swift in Sources */,
+				36E986EE2325437400CD301F /* CurrencyRate.swift in Sources */,
 				36E986C1231F03D200CD301F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E986EF2325437400CD301F /* CurrencyRate.swift in Sources */,
 				36E986DC231F04B200CD301F /* ExchangeRatesWidgetController.swift in Sources */,
+				36E986F2232545F700CD301F /* CurrencyRatesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
